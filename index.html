@@ -5,241 +5,339 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Niyas ❤️ Aysha | Wedding Invitation</title>
+    <title>Niyas &amp; Aysha | Wedding Invitation</title>
 
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-<div id="loader">
-    <div class="loader-content">
+    <!-- Floating Bubbles -->
+    <div class="bubbles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
 
-        <h3>Bismillahir Rahmanir Rahim</h3>
+    <!-- Header -->
+    <header class="top-header">
 
-        <h1>Niyas ❤️ Aysha</h1>
+        <div class="logo">
+            N &amp; A
+        </div>
 
-        <p>Wedding Invitation</p>
+        <div class="wedding-date">
+            27 December 2026
+        </div>
 
-        <button id="openInvitation">
-            Open Invitation
-        </button>
+    </header>
+
+    <!-- Envelope Loader -->
+
+    <div id="loader">
+
+        <div class="envelope-container">
+
+            <button class="envelope-button" id="openInvitation" type="button" aria-label="Open Wedding Invitation">
+
+                <span class="envelope">
+
+                    <span class="envelope-flap"></span>
+
+                    <span class="envelope-body">
+                        <span class="envelope-border"></span>
+                    </span>
+
+                    <div class="inside-content">
+                        <h2>N &amp; A</h2>
+                        <div class="inside-divider"></div>
+                        <p>Wedding Invitation</p>
+                    </div>
+
+                    <span class="seal">
+
+                        <span class="seal-script">
+
+                            &#1606; &#1593;
+
+                        </span>
+
+                    </span>
+
+                </span>
+
+                <span class="tap-text">
+                    Tap To Open
+                </span>
+
+            </button>
+
+        </div>
 
     </div>
-</div>
 
-<section class="hero">
+    <!-- Hero -->
 
-<div class="overlay">
+    <section class="hero">
 
-<h2 class="arabic">
-﷽
-</h2>
+        <div class="overlay">
 
-<h4>Together with our families</h4>
+            <h2 class="arabic">
+                &#65021;
+            </h2>
 
-<h1>
-Niyas
-<span>&</span>
-Aysha
-</h1>
+            <h4>
+                Together with our families
+            </h4>
 
-<p class="date">
+            <h1>
 
-27 December 2026
+                Niyas
 
-</p>
+                <span>&amp;</span>
 
-<a href="#countdown" class="scroll-btn">
-Scroll Down
-</a>
+                Aysha
 
-</div>
+            </h1>
 
-</section>
+            <p class="hero-subtitle">
+                Nikah Ceremony
+            </p>
 
-<section id="countdown">
+            <p class="date">
+                27 December 2026
+            </p>
 
-<h2>Countdown</h2>
+            <a href="#countdown" class="scroll-btn">
+                Scroll
+            </a>
 
-<div id="timer">
+        </div>
 
-<div>
+    </section>
 
-<span id="days">0</span>
+    <!-- Countdown -->
 
-<p>Days</p>
+    <section id="countdown">
 
-</div>
+        <h2>Countdown</h2>
 
-<div>
+        <div id="timer">
 
-<span id="hours">0</span>
+            <div>
+                <span id="days">0</span>
+                <p>Days</p>
+            </div>
 
-<p>Hours</p>
+            <div>
+                <span id="hours">0</span>
+                <p>Hours</p>
+            </div>
 
-</div>
+            <div>
+                <span id="minutes">0</span>
+                <p>Minutes</p>
+            </div>
 
-<div>
+            <div>
+                <span id="seconds">0</span>
+                <p>Seconds</p>
+            </div>
 
-<span id="minutes">0</span>
+        </div>
 
-<p>Minutes</p>
+    </section>
 
-</div>
+    <!-- Couple -->
 
-<div>
+    <section class="couple-section">
 
-<span id="seconds">0</span>
+        <div class="couple-container">
 
-<p>Seconds</p>
+            <img src="assets/images/couple.jpg" alt="Niyas & Aysha" class="couple-image">
 
-</div>
+            <h2 class="couple-title">
 
-</div>
+                Niyas
 
-</section>
+                <span>&amp;</span>
 
-<section class="event">
+                Aysha
 
-<h2>Nikah</h2>
+            </h2>
 
-<p>
+            <p class="couple-text">
 
-📅 27 December 2026
+                As we embark on this sacred journey, we humbly request your presence and your fervent prayers for a
+                blessed, joyous, and lifelong union. May Allah grant us love, understanding, and barakah. Ameen!
 
-</p>
+            </p>
 
-<p>
+        </div>
 
-🕚 11:00 AM
+    </section>
 
-</p>
+    <!-- Nikah -->
 
-<p>
+    <section class="event">
 
-📍 Royal Mahal,
-Kulasekarapatnam,
-Thoothukudi District,
-Tamil Nadu
+        <h2>Nikah</h2>
 
-</p>
+        <p>📅 27 December 2026</p>
 
-<a target="_blank"
-href="https://share.google/NPIJR7cmKqHXhWXov">
+        <p>🕚 11:00 AM</p>
 
-View Location
+        <p>
 
-</a>
+            📍 Royal Mahal
 
-</section>
+            <br>
 
-<section class="event">
+            Kulasekarapatnam
 
-<h2>Valima</h2>
+            <br>
 
-<p>
+            Thoothukudi District
 
-📅 28 December 2026
+            <br>
 
-</p>
+            Tamil Nadu
 
-<p>
+        </p>
 
-🕚 11:00 AM
+        <a href="https://share.google/NPIJR7cmKqHXhWXov" target="_blank">
 
-</p>
+            View Location
 
-<p>
+        </a>
 
-📍 Kothuvapalli Sannathi Street,
-Kulasekarapatnam,
-Thoothukudi District,
-Tamil Nadu
+    </section>
 
-</p>
+    <!-- Valima -->
 
-<a target="_blank"
-href="https://maps.app.goo.gl/ddxvraiRRCzTQj6q6">
+    <section class="event">
 
-View Location
+        <h2>Valima</h2>
 
-</a>
+        <p>📅 28 December 2026</p>
 
-</section>
+        <p>🕚 11:00 AM</p>
 
-<section class="parents">
+        <p>
 
-<h2>With Blessings Of</h2>
+            📍 Kothuvapalli Sannathi Street
 
-<div class="parent-card">
+            <br>
 
-<h3>Groom's Parents</h3>
+            Kulasekarapatnam
 
-<p>
+            <br>
 
-Ayubkhan
+            Thoothukudi District
 
-&
+            <br>
 
-Jawahira
+            Tamil Nadu
 
-</p>
+        </p>
 
-</div>
+        <a href="https://maps.app.goo.gl/ddxvraiRRCzTQj6q6" target="_blank">
 
-<div class="parent-card">
+            View Location
 
-<h3>Bride's Parents</h3>
+        </a>
 
-<p>
+    </section>
 
-Aboobacker Sithiq
+    <!-- Blessings -->
 
-&
+    <section class="parents">
 
-Sharifa
+        <h2 class="dua-arabic">
 
-</p>
+            بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
 
-</div>
+        </h2>
 
-</section>
+        <p class="dua-english">
 
-<section class="contact">
+            "May Allah bless you, shower His blessings upon you,
+            and unite both of you in goodness."
 
-<h2>Contact</h2>
+        </p>
 
-<a href="tel:+919791558544">
+        <div class="compliments">
 
-📞 Groom's Brother
+            <p class="compliment-title">
 
-</a>
+                With Best Compliments From
 
-<a href="tel:+919840785859">
+            </p>
 
-📞 Bride's Father
+            <p class="compliment-name">
 
-</a>
+                Fathima, Rasool, Fasila &amp; Ashik
 
-</section>
+            </p>
 
-<footer>
+        </div>
 
-Made with ❤️ for
+    </section>
 
-Niyas & Aysha
+    <!-- Contact -->
 
-</footer>
+    <section class="contact">
 
+        <h2>
+            Need Assistance?
+        </h2>
+
+        <a href="tel:+919791558544">
+
+            📞 Groom's Brother
+
+        </a>
+
+        <a href="tel:+919840785859">
+
+            📞 Bride's Father
+
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>
+
+            N &amp; A
+
+        </h3>
+
+        <p>
+
+            Forever Begins Here
+
+        </p>
+
+    </footer>
+    <button id="musicToggle" class="music-btn" aria-label="Toggle Music">
+        <i class="fa-solid fa-volume-high"></i>
+    </button>
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/wedding-music.mp3" type="audio/mpeg">
+    </audio>
+</body>
 <script src="js/script.js"></script>
-
 </body>
 
 </html>
