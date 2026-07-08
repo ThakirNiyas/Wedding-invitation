@@ -75,3 +75,22 @@ document.querySelectorAll("section").forEach(section => {
     section.classList.add("hidden");
     observer.observe(section);
 });
+
+document.addEventListener("click", function (e) {
+
+    for (let i = 0; i < 12; i++) {
+
+        const star = document.createElement("div");
+        star.className = "sparkle";
+
+        star.style.left = (e.clientX + (Math.random() * 40 - 20)) + "px";
+        star.style.top = (e.clientY + (Math.random() * 40 - 20)) + "px";
+
+        document.body.appendChild(star);
+
+        setTimeout(() => {
+            star.remove();
+        }, 900);
+    }
+
+});

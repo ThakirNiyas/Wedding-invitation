@@ -255,4 +255,27 @@ footer {
         transition: 0.8s;
     }
 
+    .sparkle {
+        position: fixed;
+        width: 8px;
+        height: 8px;
+        background: radial-gradient(circle, #ffd700 0%, #ffef9f 60%, transparent 100%);
+        border-radius: 50%;
+        pointer-events: none;
+        animation: sparkleAnim 900ms ease-out forwards;
+        z-index: 99999;
+    }
+
+    @keyframes sparkleAnim {
+        0% {
+            transform: scale(0.5);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(-40px) scale(2);
+            opacity: 0;
+        }
+    }
+
 }
