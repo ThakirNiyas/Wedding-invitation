@@ -34,6 +34,23 @@ if (openBtn && loader) {
 
 const weddingDate = new Date("December 27, 2026 11:00:00").getTime();
 
+function updateFlip(id, value) {
+
+    const el = document.getElementById(id);
+
+    if (el.textContent != value) {
+
+        el.classList.remove("flip");
+
+        void el.offsetWidth;
+
+        el.textContent = value;
+
+        el.classList.add("flip");
+    }
+
+}
+
 const timer = setInterval(() => {
     const now = new Date().getTime();
     const distance = weddingDate - now;
@@ -49,10 +66,10 @@ const timer = setInterval(() => {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("days").innerText = days;
-    document.getElementById("hours").innerText = hours;
-    document.getElementById("minutes").innerText = minutes;
-    document.getElementById("seconds").innerText = seconds;
+    updateFlip("days", days);
+    updateFlip("hours", hours);
+    updateFlip("minutes", minutes);
+    updateFlip("seconds", seconds);
 }, 1000);
 
 const observer = new IntersectionObserver((entries) => {
@@ -104,7 +121,7 @@ window.addEventListener("scroll", () => {
 
 document.addEventListener("pointerdown", (e) => {
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 6; i++) {
 
         const star = document.createElement("div");
 
@@ -203,3 +220,41 @@ musicBtn.addEventListener("click", () => {
     }
 
 });
+
+/* -------------------------------
+Golden Scroll Glow
+-------------------------------- */
+
+const glow = document.createElement("div");
+glow.className = "scroll-glow";
+
+document.body.appendChild(glow);
+
+let hideGlow;
+
+window.addEventListener("scroll", () => {
+
+    glow.style.left = (window.innerWidth / 2) + "px";
+    glow.style.top = (window.innerHeight * 0.75) + "px";
+
+    glow.style.opacity = ".9";
+
+    clearTimeout(hideGlow);
+
+    hideGlow = setTimeout(() => {
+        glow.style.opacity = "0";
+    }, 180);
+
+});
+
+function updateValue(id, value) {
+    const el = document.getElementById(id);
+
+    if (el.textContent != value) {
+        el.textContent = value;
+
+        el.classList.remove("flip");
+        void el.offsetWidth;
+        el.classList.add("flip");
+    }
+}
