@@ -676,7 +676,7 @@ a {
     font-family: 'Cinzel', serif;
     font-size: 70px;
     color: #f5d56f;
-    line-height: 1.2;
+    line-height: 1;
     margin-bottom: 1rem;
 }
 
@@ -687,9 +687,10 @@ a {
 }
 
 .date {
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 25px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    line-height: 1;
 }
 
 .scroll-btn {
