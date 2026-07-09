@@ -108,16 +108,11 @@ footer {
 .bubbles span {
     position: absolute;
     bottom: -50px;
-
     width: 6px;
     height: 6px;
-
     border-radius: 50%;
-
     background: rgba(255, 215, 120, 0.12);
-
     box-shadow: 0 0 6px rgba(255, 215, 120, 0.25);
-
     animation: floatBubble linear infinite;
 }
 
